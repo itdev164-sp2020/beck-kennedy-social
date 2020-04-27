@@ -1,8 +1,5 @@
 exports.handler = async (event, context) => {
-    const {
-      identity,
-      user
-    } = context.clientContext;
+    const { identity, user } = context.clientContext;
     if (user) {
       const userID = user.sub;
       return {
